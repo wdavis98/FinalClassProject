@@ -18,7 +18,6 @@ namespace WebApplication1.Controllers
         // GET: Fruits
         public ActionResult Index()
         {
-
             return View(db.Fruits.ToList());
         }
 
