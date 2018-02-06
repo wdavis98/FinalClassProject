@@ -8,7 +8,14 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
+<!--<body style="background-color:black">-->
 <body>
+    <style>
+        .navbar .divider-vertical {
+            height: 51px;
+            border-right: 1px solid #ffffff;
+        }
+    </style>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -17,13 +24,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a href='@Url.Action("Index", "Home")'>
+                    <img src="~/Content/Images/test icon.png" />
+                </a>     
+                @*@Html.ActionLink("Kupanga", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Choose Your Home", "OneStory", "Home")</li>
+                    <li class="divider-vertical"></li>
+                    <li>@Html.ActionLink("About Kupanga", "About", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -32,9 +42,6 @@
     <div class="container">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

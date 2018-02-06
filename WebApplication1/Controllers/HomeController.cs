@@ -26,5 +26,89 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+
+        public ActionResult Choose()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult Customize()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult Create()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult OneStory()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult TwoStory()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult SingleFamily()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult RanchStyle()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult Doors()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult Windows()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult Roof()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult Flooring()
+        {
+            ViewBag.Message = "Your test choose page.";
+
+            return View();
+        }
+
+        public ActionResult Feedback()
+        {
+            ViewBag.Message = "Your feedback page.";
+
+            return View();
+        }
     }
 }

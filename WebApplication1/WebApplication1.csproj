@@ -206,6 +206,34 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\baseboard.jpg" />
+    <Content Include="Content\Images\baseboard2.jpg" />
+    <Content Include="Content\Images\baseboard3.jpg" />
+    <Content Include="Content\Images\create.jpg" />
+    <Content Include="Content\Images\door1.jpg" />
+    <Content Include="Content\Images\door2.jpg" />
+    <Content Include="Content\Images\door3.jpg" />
+    <Content Include="Content\Images\find.jpg" />
+    <Content Include="Content\Images\Floor1.jpg" />
+    <Content Include="Content\Images\Floor2.jpg" />
+    <Content Include="Content\Images\Floor3.jpg" />
+    <Content Include="Content\Images\jared.jpg" />
+    <Content Include="Content\Images\kupanga2.jpg" />
+    <Content Include="Content\Images\prints.jpg" />
+    <Content Include="Content\Images\RanchStyle.jpg" />
+    <Content Include="Content\Images\Roof1.jpg" />
+    <Content Include="Content\Images\Roof2.jpg" />
+    <Content Include="Content\Images\Roof3.jpg" />
+    <Content Include="Content\Images\step1.png" />
+    <Content Include="Content\Images\step2.png" />
+    <Content Include="Content\Images\step3.png" />
+    <Content Include="Content\Images\test icon.png" />
+    <Content Include="Content\Images\TwoStory.jpg" />
+    <Content Include="Content\Images\SingleFamily.jpg" />
+    <Content Include="Content\Images\window1.jpg" />
+    <Content Include="Content\Images\window2.jpg" />
+    <Content Include="Content\Images\window3.jpg" />
+    <Content Include="Content\Images\wood.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -226,7 +254,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Views\Home\Images\test.jpg" />
+    <Content Include="Content\Images\OneStory.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -266,6 +294,18 @@
     <Content Include="Views\Fruits\Details.cshtml" />
     <Content Include="Views\Fruits\Edit.cshtml" />
     <Content Include="Views\Fruits\Index.cshtml" />
+    <Content Include="Views\Home\Feedback.cshtml" />
+    <Content Include="Views\Home\Choose.cshtml" />
+    <Content Include="Views\Home\Customize.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\OneStory.cshtml" />
+    <Content Include="Views\Home\TwoStory.cshtml" />
+    <Content Include="Views\Home\SingleFamily.cshtml" />
+    <Content Include="Views\Home\RanchStyle.cshtml" />
+    <Content Include="Views\Home\Doors.cshtml" />
+    <Content Include="Views\Home\WIndows.cshtml" />
+    <Content Include="Views\Home\Roof.cshtml" />
+    <Content Include="Views\Home\Flooring.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

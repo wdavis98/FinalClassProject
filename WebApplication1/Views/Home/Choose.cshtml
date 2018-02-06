@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Choose";
+}
+<style>
+    .center-pills {
+        display: inline-block;
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <img style="width:100%;height:200px;" src="~/Content/Images/step1.png" alt="One Story Homes">
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <h2 style="text-align:center;background-color:grey;color:white;">Choose From One of The Categories Below!</h2>
+    </div>
+</div>
+<div class="col-md-12 text-center">
+    <ul class="nav nav-pills center-pills">
+        <li>@Html.ActionLink("One-Story Homes", "OneStory", "Home")</li>
+        <li>@Html.ActionLink("Two-Story Homes", "TwoStory", "Home")</li>
+        <li>@Html.ActionLink("Single-Family Homes", "SingleFamily", "Home")</li>
+        <li>@Html.ActionLink("Ranch Style Homes", "RanchStyle", "Home")</li>
+    </ul>
+</div>
+@*<div class="row text-center">
+    <p><a class="btn btn-primary" href="@Url.Action("Customize", "Home")">Continue &raquo;</a></p>
+</div>*@
+

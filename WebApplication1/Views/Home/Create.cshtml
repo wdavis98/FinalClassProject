@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+<style>
+    .center-pills {
+        display: inline-block;
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <img style="width:100%;height:200px;" src="~/Content/Images/step3.png" alt="One Story Homes">
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <h2 style="text-align:center;background-color:grey;color:white;">Please Fill Out Your Information Below!</h2>
+    </div>
+</div>
+<br/>
+<div class='row'>
+    <div class='col-sm-2'><h4>Name</h4></div>
+    <div class='col-sm-4'>
+        <input class='form-control' type='text' name='iName' placeholder='Name' maxlength='10' required />
+    </div>
+    <div class='col-sm-2'><h4>Email</h4></div>
+    <div class='col-sm-4'>
+        <input class='form-control' type='text' name='iEmail'  placeholder='Email' maxlength='10' />
+    </div>
+</div>
+<div class='row'>
+    <div class='col-sm-2'><h4>Address</h4></div>
+    <div class='col-sm-4'>
+        <input class='form-control' type='text' name='iAddress' placeholder='Address' maxlength='10' required />
+    </div>
+    <div class='col-sm-2'><h4>Phone Number</h4></div>
+    <div class='col-sm-4'>
+        <input class='form-control' type='text' name='iPhoneNumber' placeholder='Phone Number' maxlength='10' />
+    </div>
+</div>
+<br />
+<div class="row text-center">
+    <p><a class="btn btn-primary" href="@Url.Action("Index", "Home")">Create &raquo;</a></p>
+</div>
+

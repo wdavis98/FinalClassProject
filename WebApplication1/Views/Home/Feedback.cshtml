@@ -1,6 +1,8 @@
-﻿@{
-    ViewBag.Title = "About";
+﻿
+@{
+    ViewBag.Title = "Feedback";
 }
+
 <style>
     .centered {
         position: absolute;
@@ -8,6 +10,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     .center-pills {
         display: inline-block;
     }
@@ -21,18 +24,11 @@
 <br />
 <div class="col-md-12 text-center">
     <ul class="nav nav-pills center-pills">
-        <li class="active">@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
         <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
-        <li>@Html.ActionLink("Feedback", "Feedback", "Home")</li>
+        <li class="active">@Html.ActionLink("Feedback", "Feedback", "Home")</li>
     </ul>
 </div>
-    <br />
-<div class="col-md-6">
-    <p>Use this area to provide additional information. Testing</p>
-</div>
-<div class="col-md-6 text-center">
-    <h2>Jared Baker</h2>
-    <img src="~/Content/Images/jared.jpg" alt="Choose.jpg" class="img-circle" style="height:200px;width:200px">
-    <p>The backbone of this operation, most of this website wouldn't be possible without this handsome fellow. Sorry ladies, he's engaged!</p>
-</div>
-    
+<br />
+<p>Use this area to provide additional information. Testing</p>
+
