@@ -228,12 +228,14 @@
     <Content Include="Content\Images\step2.png" />
     <Content Include="Content\Images\step3.png" />
     <Content Include="Content\Images\test icon.png" />
+    <Content Include="Content\Images\test icon3.png" />
     <Content Include="Content\Images\TwoStory.jpg" />
     <Content Include="Content\Images\SingleFamily.jpg" />
     <Content Include="Content\Images\window1.jpg" />
     <Content Include="Content\Images\window2.jpg" />
     <Content Include="Content\Images\window3.jpg" />
     <Content Include="Content\Images\wood.jpg" />
+    <Content Include="Content\kupangatheme.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
