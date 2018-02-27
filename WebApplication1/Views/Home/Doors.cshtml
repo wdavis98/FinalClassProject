@@ -18,17 +18,23 @@
         <h2 style="text-align:center;background-color:grey;color:white;">Choose From One of The Categories Below!</h2>
     </div>
 </div>
-<div class="col-md-12 text-center">
-    <ul class="nav nav-pills center-pills">
-        <li class="active">@Html.ActionLink("Doors", "Doors", "Home")</li>
-        <li>@Html.ActionLink("Windows", "Windows", "Home")</li>
-        <li>@Html.ActionLink("Roof", "Roof", "Home")</li>
-        <li>@Html.ActionLink("Flooring", "Flooring", "Home")</li>
-    </ul>
+<div class="row">
+	<div class="col-md-12 text-center">
+		<ul class="nav nav-pills center-pills">
+			<li class="active">@Html.ActionLink("Doors", "Doors", "Home")</li>
+			<li>@Html.ActionLink("Windows", "Windows", "Home")</li>
+			<li>@Html.ActionLink("Roof", "Roof", "Home")</li>
+			<li>@Html.ActionLink("Flooring", "Flooring", "Home")</li>
+		</ul>
+	</div>
 </div>
-<br/>
-<div class="row text-center">
-    <p><a class="btn btn-primary" href="@Url.Action("Create", "Home")">Continue &raquo;</a></p>
+<div class="row">
+	<div class="col-md-6 text-right">
+		<button type="button" class="btn btn-default">Status &raquo;</button>		
+	</div>
+	<div class="col-md-6 text-left">
+		<a class="btn btn-primary" href="@Url.Action("Create", "Home")">Continue &raquo;</a>
+	</div>
 </div>
 <div class="row">
     <div class="col-sm-4">

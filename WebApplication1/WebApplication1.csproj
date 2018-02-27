@@ -206,6 +206,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\A. Choose\Homes\floorplan.png" />
     <Content Include="Content\Images\D. About\baseboard3.jpg" />
     <Content Include="Content\Images\B. Customize\Doors\door1.jpg" />
     <Content Include="Content\Images\B. Customize\Doors\door2.jpg" />
