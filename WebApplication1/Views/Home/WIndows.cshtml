@@ -19,17 +19,16 @@
     </div>
 </div>
 <div class="col-md-12 text-center">
-    <ul class="nav nav-pills center-pills">
-        <li>@Html.ActionLink("Doors", "Doors", "Home")</li>
-        <li class="active">@Html.ActionLink("Windows", "Windows", "Home")</li>
-        <li>@Html.ActionLink("Roof", "Roof", "Home")</li>
-        <li>@Html.ActionLink("Flooring", "Flooring", "Home")</li>
-    </ul>
+	<button type="button" class="btn btn-default pull-left">Status &raquo;</button>
+	<ul class="nav nav-pills center-pills">
+		<li>@Html.ActionLink("Doors", "Doors", "Home")</li>
+		<li class="active">@Html.ActionLink("Windows", "Windows", "Home")</li>
+		<li>@Html.ActionLink("Roof", "Roof", "Home")</li>
+		<li>@Html.ActionLink("Flooring", "Flooring", "Home")</li>
+	</ul>
+	<a class="btn btn-primary pull-right" href="@Url.Action("Create", "Home")">Continue &raquo;</a>
 </div>
 <br/>
-<div class="row text-center">
-    <p><a class="btn btn-primary" href="@Url.Action("Create", "Home")">Continue &raquo;</a></p>
-</div>
 <div class="row">
     <div class="col-sm-4">
         <div class="card" style="width: 33rem;">

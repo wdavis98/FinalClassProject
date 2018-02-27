@@ -1,146 +1,212 @@
 ﻿
 @{
-    ViewBag.Title = "Customize";
+	ViewBag.Title = "Customize";
 }
 <style>
-    .center-pills {
-        display: inline-block;
-    }
+	.center-pills {
+		display: inline-block;
+	}
 </style>
+<div class="container-fluid">
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title text-center">Status</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-4">
+							<p><b>Type</b></p>
+						</div>
+						<div class="col-md-4">
+							<p><b>Price</b></p>
+						</div>
+						<div class="col-md-4">
+							<p><b>Material</b></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p>Door</p>
+						</div>
+						<div class="col-md-4">
+							<p>$100</p>
+						</div>
+						<div class="col-md-4">
+							<p>Oak</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p>Window</p>
+						</div>
+						<div class="col-md-4">
+							<p>$200</p>
+						</div>
+						<div class="col-md-4">
+							<p>Square</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p>Roof</p>
+						</div>
+						<div class="col-md-4">
+							<p>$3000</p>
+						</div>
+						<div class="col-md-4">
+							<p>Metal</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p>Floor</p>
+						</div>
+						<div class="col-md-4">
+							<p>$100</p>
+						</div>
+						<div class="col-md-4">
+							<p>Tile</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="row">
-    <div class="col-md-12">
-        <img style="width:100%;height:200px;" src="~/Content/Images/B. Customize/step2.png" alt="One Story Homes">
-    </div>
+	<div class="col-md-12">
+		<img style="width:100%;height:200px;" src="~/Content/Images/B. Customize/step2.png" alt="One Story Homes">
+	</div>
 </div>
 <br />
 <div class="row">
-    <div class="col-md-12">
-        <h2 style="text-align:center;background-color:grey;color:white;">Choose From One of The Categories Below!</h2>
-    </div>
+	<div class="col-md-12">
+		<h2 style="text-align:center;background-color:grey;color:white;">Choose From One of The Categories Below!</h2>
+	</div>
 </div>
 <div class="row">
 	<div class="col-md-12 text-center">
+		<button type="button" class="btn btn-default pull-left" data-toggle="modal" data-target="#myModal">Status &raquo;</button>
 		<ul class="nav nav-pills center-pills">
 			<li class="active">@Html.ActionLink("Doors", "Doors", "Home")</li>
 			<li>@Html.ActionLink("Windows", "Windows", "Home")</li>
 			<li>@Html.ActionLink("Roof", "Roof", "Home")</li>
 			<li>@Html.ActionLink("Flooring", "Flooring", "Home")</li>
 		</ul>
+		<a class="btn btn-primary pull-right" href="@Url.Action("Create", "Home")">Continue &raquo;</a>
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-6 text-right">
-		<button type="button" class="btn btn-default">Status &raquo;</button>		
+	<div class="col-sm-4">
+		<div class="card" style="width: 33rem;">
+			<div style="background-color:gray;">
+				<h2 style="color:white;padding-left:10px;">Door 1</h2>
+			</div>
+			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door1.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<p><button class="btn btn-primary Material1">Select This Material &raquo;</button></p>
+			</div>
+		</div>
 	</div>
-	<div class="col-md-6 text-left">
-		<a class="btn btn-primary" href="@Url.Action("Create", "Home")">Continue &raquo;</a>
+	<div class="col-sm-4">
+		<div class="card" style="width: 33rem;">
+			<div style="background-color:gray;">
+				<h2 style="color:white;padding-left:10px;">Door 2</h2>
+			</div>
+			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door2.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<p><button class="btn btn-primary Material2">Select This Material &raquo;</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="card" style="width: 33rem;">
+			<div style="background-color:gray;">
+				<h2 style="color:white;padding-left:10px;">Door 3</h2>
+			</div>
+			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door3.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<p><button class="btn btn-primary Material3">Select This Material &raquo;</button></p>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="row">
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Door 1</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door1.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material1">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Door 2</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door2.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material2">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Door 3</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door3.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material3">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Door 1</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door1.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material4">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Door 2</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door2.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material5">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Door 3</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door3.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material6">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
+	<div class="col-sm-4">
+		<div class="card" style="width: 33rem;">
+			<div style="background-color:gray;">
+				<h2 style="color:white;padding-left:10px;">Door 1</h2>
+			</div>
+			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door1.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<p><button class="btn btn-primary Material4">Select This Material &raquo;</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="card" style="width: 33rem;">
+			<div style="background-color:gray;">
+				<h2 style="color:white;padding-left:10px;">Door 2</h2>
+			</div>
+			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door2.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<p><button class="btn btn-primary Material5">Select This Material &raquo;</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="card" style="width: 33rem;">
+			<div style="background-color:gray;">
+				<h2 style="color:white;padding-left:10px;">Door 3</h2>
+			</div>
+			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door3.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<p><button class="btn btn-primary Material6">Select This Material &raquo;</button></p>
+			</div>
+		</div>
+	</div>
 </div>
 <script src="/Scripts/jquery-1.10.2.js"></script>
 <script src="/Scripts/respond.js"></script>
 <script>
-    $(".Material1").on('click', function () { 
-        $('.Material1').html('Selected');
-    });
-    $(".Material2").on('click', function () {
-        $('.Material2').html('Selected');
-    });
-    $(".Material3").on('click', function () {
-        $('.Material3').html('Selected');
-    });
-    $(".Material3").on('click', function () {
-        $('.Material3').html('Selected');
-    });
-    $(".Material4").on('click', function () {
-        $('.Material4').html('Selected');
-    });
-    $(".Material5").on('click', function () {
-        $('.Material5').html('Selected');
-    });
-    $(".Material6").on('click', function () {
-        $('.Material6').html('Selected');
-    });
+	$(".Material1").on('click', function () {
+		$('.Material1').html('Selected');
+	});
+	$(".Material2").on('click', function () {
+		$('.Material2').html('Selected');
+	});
+	$(".Material3").on('click', function () {
+		$('.Material3').html('Selected');
+	});
+	$(".Material3").on('click', function () {
+		$('.Material3').html('Selected');
+	});
+	$(".Material4").on('click', function () {
+		$('.Material4').html('Selected');
+	});
+	$(".Material5").on('click', function () {
+		$('.Material5').html('Selected');
+	});
+	$(".Material6").on('click', function () {
+		$('.Material6').html('Selected');
+	});
 </script>
 
