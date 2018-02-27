@@ -207,6 +207,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\A. Choose\Homes\floorplan.png" />
+    <Content Include="Content\Images\A. Choose\step1.png" />
+    <Content Include="Content\Images\B. Customize\step2.png" />
+    <Content Include="Content\Images\C. Confirm\step3.png" />
     <Content Include="Content\Images\D. About\baseboard3.jpg" />
     <Content Include="Content\Images\B. Customize\Doors\door1.jpg" />
     <Content Include="Content\Images\B. Customize\Doors\door2.jpg" />
@@ -225,9 +228,6 @@
     <Content Include="Content\Images\B. Customize\Roof\Roof1.jpg" />
     <Content Include="Content\Images\B. Customize\Roof\Roof2.jpg" />
     <Content Include="Content\Images\B. Customize\Roof\Roof3.jpg" />
-    <Content Include="Content\Images\A. Choose\step1.png" />
-    <Content Include="Content\Images\B. Customize\step2.png" />
-    <Content Include="Content\Images\C. Create\step3.png" />
     <Content Include="Content\Images\Navbar\test icon3.png" />
     <Content Include="Content\Images\A. Choose\Homes\TwoStory.jpg" />
     <Content Include="Content\Images\A. Choose\Homes\SingleFamily.jpg" />
@@ -299,7 +299,7 @@
     <Content Include="Views\Home\Feedback.cshtml" />
     <Content Include="Views\Home\Choose.cshtml" />
     <Content Include="Views\Home\Customize.cshtml" />
-    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\Confirm.cshtml" />
     <Content Include="Views\Home\Doors.cshtml" />
     <Content Include="Views\Home\WIndows.cshtml" />
     <Content Include="Views\Home\Roof.cshtml" />

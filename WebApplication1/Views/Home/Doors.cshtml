@@ -92,23 +92,73 @@
 </div>
 <div class="row">
 	<div class="col-md-12 text-center">
-		<button type="button" class="btn btn-default pull-left" data-toggle="modal" data-target="#myModal">Status &raquo;</button>
+		<button type="button" class="btn btn-info pull-left" data-toggle="modal" data-target="#myModal">Status <span class="badge">!</span></button>
 		<ul class="nav nav-pills center-pills">
 			<li class="active">@Html.ActionLink("Doors", "Doors", "Home")</li>
 			<li>@Html.ActionLink("Windows", "Windows", "Home")</li>
 			<li>@Html.ActionLink("Roof", "Roof", "Home")</li>
 			<li>@Html.ActionLink("Flooring", "Flooring", "Home")</li>
 		</ul>
-		<a class="btn btn-primary pull-right" href="@Url.Action("Create", "Home")">Continue &raquo;</a>
+		<a class="btn btn-primary pull-right" href="@Url.Action("Confirm", "Home")">Continue &raquo;</a>
 	</div>
 </div>
 <div class="row">
-	<div class="col-sm-4">
-		<div class="card" style="width: 33rem;">
+	<div class="col-sm-3">
+		<div class="card">
+			<div style="background-color:gray;">
+				<h2 style="color:white;padding-left:10px;">Oak <span class="pull-right">$100</span></h2>
+			</div>
+			<img class="card-img-top" style="width: 100%;height: 200px;" src="~/Content/Images/B. Customize/Doors/door1.jpg" alt="Card image cap">
+			<div class="card-body text-center">
+				<br/>
+				<p><button class="btn btn-default Material1">Un-Select &raquo;</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<div style="background-color:gray;">
+				<h2 style="color:white;padding-left:10px;">Door 2</h2>
+			</div>
+			<img class="card-img-top" style="width: 100%;height: 200px;" src="~/Content/Images/B. Customize/Doors/door2.jpg" alt="Card image cap">
+			<div class="card-body text-center">
+				<br />
+				<p><button class="btn btn-primary Material1">Select &raquo;</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<div style="background-color:gray;">
+				<h2 style="color:white;padding-left:10px;">Door 3</h2>
+			</div>
+			<img class="card-img-top" style="width: 100%;height: 200px;" src="~/Content/Images/B. Customize/Doors/door3.jpg" alt="Card image cap">
+			<div class="card-body text-center">
+				<br />
+				<p><button class="btn btn-primary Material1">Select &raquo;</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<div style="background-color:gray;">
+				<h2 style="color:white;padding-left:10px;">Door 3</h2>
+			</div>
+			<img class="card-img-top" style="width: 100%;height: 200px;" src="~/Content/Images/B. Customize/Doors/door3.jpg" alt="Card image cap">
+			<div class="card-body text-center">
+				<br />
+				<p><button class="btn btn-primary Material1">Select &raquo;</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-3">
+		<div class="card">
 			<div style="background-color:gray;">
 				<h2 style="color:white;padding-left:10px;">Door 1</h2>
 			</div>
-			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door1.jpg" alt="Card image cap">
+			<img class="card-img-top" style="width: 100%;height: 200px;" src="~/Content/Images/B. Customize/Doors/door1.jpg" alt="Card image cap">
 			<div class="card-body">
 				<h5 class="card-title">Card title</h5>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -116,12 +166,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-sm-4">
-		<div class="card" style="width: 33rem;">
+	<div class="col-sm-3">
+		<div class="card">
 			<div style="background-color:gray;">
 				<h2 style="color:white;padding-left:10px;">Door 2</h2>
 			</div>
-			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door2.jpg" alt="Card image cap">
+			<img class="card-img-top" style="width: 100%;height: 200px;" src="~/Content/Images/B. Customize/Doors/door2.jpg" alt="Card image cap">
 			<div class="card-body">
 				<h5 class="card-title">Card title</h5>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -129,12 +179,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-sm-4">
-		<div class="card" style="width: 33rem;">
+	<div class="col-sm-3">
+		<div class="card">
 			<div style="background-color:gray;">
 				<h2 style="color:white;padding-left:10px;">Door 3</h2>
 			</div>
-			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door3.jpg" alt="Card image cap">
+			<img class="card-img-top" style="width: 100%;height: 200px;" src="~/Content/Images/B. Customize/Doors/door3.jpg" alt="Card image cap">
 			<div class="card-body">
 				<h5 class="card-title">Card title</h5>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -142,44 +192,16 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div class="row">
-	<div class="col-sm-4">
-		<div class="card" style="width: 33rem;">
-			<div style="background-color:gray;">
-				<h2 style="color:white;padding-left:10px;">Door 1</h2>
-			</div>
-			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door1.jpg" alt="Card image cap">
-			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<p><button class="btn btn-primary Material4">Select This Material &raquo;</button></p>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-4">
-		<div class="card" style="width: 33rem;">
-			<div style="background-color:gray;">
-				<h2 style="color:white;padding-left:10px;">Door 2</h2>
-			</div>
-			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door2.jpg" alt="Card image cap">
-			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<p><button class="btn btn-primary Material5">Select This Material &raquo;</button></p>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-4">
-		<div class="card" style="width: 33rem;">
+	<div class="col-sm-3">
+		<div class="card">
 			<div style="background-color:gray;">
 				<h2 style="color:white;padding-left:10px;">Door 3</h2>
 			</div>
-			<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Doors/door3.jpg" alt="Card image cap">
+			<img class="card-img-top" style="width: 100%;height: 200px;" src="~/Content/Images/B. Customize/Doors/door3.jpg" alt="Card image cap">
 			<div class="card-body">
 				<h5 class="card-title">Card title</h5>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<p><button class="btn btn-primary Material6">Select This Material &raquo;</button></p>
+				<p><button class="btn btn-primary Material3">Select This Material &raquo;</button></p>
 			</div>
 		</div>
 	</div>

@@ -17,12 +17,10 @@
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
-</div>
-<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
 			<img style="width:100%;height:200px;" src="~/Content/Images/A. Choose/step1.png" alt="One Story Homes">
@@ -46,7 +44,7 @@
 		<div class="col-sm-4">
 			<div class="card" style="width: 33rem;">
 				<div style="background-color:gray;">
-					<h2 style="color:white;padding-left:10px;">Delphos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100,000</h2>					
+					<h2 style="color:white;padding-left:10px;">Delphos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100,000</h2>
 				</div>
 				<img class="card-img-top" id="floor-image" style="width: 33rem;height: 15em;" src="~/Content/Images/A. Choose/Homes/OneStory.jpg" alt="Card image cap">
 				<div class="card-body">
@@ -66,11 +64,11 @@
 					<!--<p class="card-title" style="padding-top:10px;padding-left:20px;"><b>2073</b> sq ft</p>-->
 					<div class="row">
 						<div class="col-md-6">
-							<p><a class="btn btn-primary" href="@Url.Action("Doors", "Home")">Select This Home &raquo;</a></p>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Floor Plan &raquo;</button>
 						</div>
 						<div class="col-md-6 text-right">
 							<!--<p><button class="btn btn-default toggle-floor">Floor Plan &raquo;</button></p>-->
-							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Floor Plan &raquo;</button>
+							<p><a class="btn btn-primary" href="@Url.Action("Doors", "Home")">Select This Home &raquo;</a></p>
 						</div>
 					</div>
 				</div>

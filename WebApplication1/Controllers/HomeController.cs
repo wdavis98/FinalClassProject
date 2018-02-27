@@ -41,7 +41,7 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult Create()
+        public ActionResult Confirm()
         {
             ViewBag.Message = "Your test choose page.";
 
