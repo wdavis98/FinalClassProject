@@ -208,7 +208,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\A. Choose\Homes\floorplan.png" />
     <Content Include="Content\Images\A. Choose\step1.png" />
+    <Content Include="Content\Images\B. Customize\Doors\door4.jpg" />
     <Content Include="Content\Images\B. Customize\step2.png" />
+    <Content Include="Content\Images\B. Customize\step2Test.png" />
+    <Content Include="Content\Images\B. Customize\step2xs.png" />
     <Content Include="Content\Images\C. Confirm\step3.png" />
     <Content Include="Content\Images\D. About\baseboard3.jpg" />
     <Content Include="Content\Images\B. Customize\Doors\door1.jpg" />
@@ -235,7 +238,7 @@
     <Content Include="Content\Images\B. Customize\Windows\window2.jpg" />
     <Content Include="Content\Images\B. Customize\Windows\window3.jpg" />
     <Content Include="Content\Images\HomePage\wood.jpg" />
-    <Content Include="Content\kupangatheme.css" />
+    <Content Include="Content\kupangaBlue.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
