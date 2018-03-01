@@ -1,22 +1,22 @@
 ﻿
 @{
-    ViewBag.Title = "Customize";
+	ViewBag.Title = "Customize";
 }
 <style>
-    .center-pills {
-        display: inline-block;
-    }
+	.center-pills {
+		display: inline-block;
+	}
 </style>
 <div class="row">
-    <div class="col-md-12">
-        <img style="width:100%;height:200px;" src="~/Content/Images/B. Customize/step2.png" alt="One Story Homes">
-    </div>
+	<div class="col-md-12">
+		<img style="width:100%;height:200px;" src="~/Content/Images/B. Customize/step2.png" alt="One Story Homes">
+	</div>
 </div>
 <br />
 <div class="row">
-    <div class="col-md-12">
-        <h2 style="text-align:center;background-color:grey;color:white;">Choose From One of The Categories Below!</h2>
-    </div>
+	<div class="col-md-12">
+		<h2 style="text-align:center;background-color:grey;color:white;">Choose From One of The Categories Below!</h2>
+	</div>
 </div>
 <div class="col-md-12 text-center">
 	<button type="button" class="btn btn-default pull-left">Status &raquo;</button>
@@ -28,112 +28,108 @@
 	</ul>
 	<a class="btn btn-primary pull-right" href="@Url.Action("Confirm", "Home")">Continue &raquo;</a>
 </div>
-<br/>
-<div class="row">
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Window 1</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Windows/window1.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material1">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Window 2</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Windows/window2.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material2">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Window 3</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Windows/window3.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material3">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Window 1</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Windows/window1.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material4">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Window 2</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Windows/window2.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material5">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card" style="width: 33rem;">
-            <div style="background-color:gray;">
-                <h2 style="color:white;padding-left:10px;">Window 3</h2>
-            </div>
-            <img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Windows/window3.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p><button class="btn btn-primary Material6">Select This Material &raquo;</button></p>
-            </div>
-        </div>
-    </div>
-</div>
+<br />
+@{
+	// Count the number of ids in the file
+	int fileCount = 9;
+
+	// Set other variables
+	int count = 0;
+	if ((fileCount % 3) == 0) {
+		count = fileCount / 3;
+		var x = 0;
+		while (x < count) {
+			<div class="row">
+				@{var y = 1;
+					while (y < 4) {
+						<div class="col-sm-4">
+							<div class="card" style="width: 33rem;">
+								<div style="background-color:gray;">
+									<h2 style="color:white;padding-left:10px;">Window @(y)</h2>
+								</div>
+								<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Windows/window@(y).jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<p><button class="btn btn-primary Material1">Select This Material &raquo;</button></p>
+								</div>
+							</div>
+						</div>
+						y += 1;
+					}
+					x += 1;
+				}
+			</div>
+		}
+	} else {
+		count = (fileCount / 3) + 1;
+		var x = 0;
+		while (x < count) {
+			<div class="row">
+				@{  var y = 1;
+					var yCount = 1;
+					if (x == (count - 1)) {
+						if ((fileCount % 3) == 1) {
+							yCount = 2;
+						} else if ((fileCount % 3) == 2) {
+							yCount = 3;
+						}
+					} else
+					{
+						yCount = 4;
+					}
+					while (y < yCount) {
+						<div class="col-sm-4">
+							<div class="card" style="width: 33rem;">
+								<div style="background-color:gray;">
+									<h2 style="color:white;padding-left:10px;">Window @(y)</h2>
+								</div>
+								<img class="card-img-top" style="width: 33rem;height: 15em;" src="~/Content/Images/B. Customize/Windows/window@(y).jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<p><button class="btn btn-primary Material1">Select This Material &raquo;</button></p>
+								</div>
+							</div>
+						</div>
+						y += 1;
+					}
+					if (x == (count - 1)) {
+						if ((fileCount % 3) == 1) {
+							<div class="col-sm-8"></div>
+						} else if ((fileCount % 3) == 2) {
+							<div class="col-sm-4"></div>
+						}
+					}
+					x += 1;
+				}
+			</div>
+		}
+	}
+}
 <script src="/Scripts/jquery-1.10.2.js"></script>
 <script src="/Scripts/respond.js"></script>
 <script>
-    $(".Material1").on('click', function () {
-        $('.Material1').html('Selected');
-    });
-    $(".Material2").on('click', function () {
-        $('.Material2').html('Selected');
-    });
-    $(".Material3").on('click', function () {
-        $('.Material3').html('Selected');
-    });
-    $(".Material3").on('click', function () {
-        $('.Material3').html('Selected');
-    });
-    $(".Material4").on('click', function () {
-        $('.Material4').html('Selected');
-    });
-    $(".Material5").on('click', function () {
-        $('.Material5').html('Selected');
-    });
-    $(".Material6").on('click', function () {
-        $('.Material6').html('Selected');
-    });
+	$(".Material1").on('click', function () {
+		$('.Material1').html('Selected');
+	});
+	$(".Material2").on('click', function () {
+		$('.Material2').html('Selected');
+	});
+	$(".Material3").on('click', function () {
+		$('.Material3').html('Selected');
+	});
+	$(".Material3").on('click', function () {
+		$('.Material3').html('Selected');
+	});
+	$(".Material4").on('click', function () {
+		$('.Material4').html('Selected');
+	});
+	$(".Material5").on('click', function () {
+		$('.Material5').html('Selected');
+	});
+	$(".Material6").on('click', function () {
+		$('.Material6').html('Selected');
+	});
 </script>
 
